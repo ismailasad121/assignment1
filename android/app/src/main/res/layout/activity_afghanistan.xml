@@ -7,30 +7,31 @@
     tools:context=".afghanistan">
 
     <TextView
-        android:id="@+id/indText"
+        android:id="@+id/afgText"
         android:layout_width="395dp"
         android:layout_height="325dp"
+        android:layout_marginTop="36dp"
         android:text="Afghanistan, officially the Islamic Republic of Afghanistan, is a landlocked country at the crossroads of Central and South Asia. Afghanistan is bordered by Pakistan to the east and south; Iran to the west; Turkmenistan, Uzbekistan, and Tajikistan to the north; and China to the northeast."
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
-        android:id="@+id/indBtn"
+        android:id="@+id/afgBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginRight="159dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginLeft="141dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginRight="183dp"
         android:onClick="afgBtnNext"
         android:text="next"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/indText" />
+        app:layout_constraintTop_toBottomOf="@+id/afgText" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -38,12 +39,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginLeft="36dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="36dp"
-        android:onClick="animateafghanistan"
         android:layout_marginRight="36dp"
+        android:onClick="animateafghanistan"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/afghanistan" />

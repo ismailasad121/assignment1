@@ -24,8 +24,9 @@ public class india extends AppCompatActivity {
         startActivity(intent);
     }
 
+
     public void animateIndia(View view) {
-        ImageView imageView=findViewById(R.id.imageView2);
+        ImageView imageView=findViewById(R.id.imageView4);
         imageView.animate().rotation(720).setDuration(2000);
     }
 }
