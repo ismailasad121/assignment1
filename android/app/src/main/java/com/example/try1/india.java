@@ -27,6 +27,6 @@ public class india extends AppCompatActivity {
 
     public void animateIndia(View view) {
         ImageView imageView=findViewById(R.id.imageView4);
-        imageView.animate().rotation(720).setDuration(2000);
+        imageView.animate().rotation(720).setDuration(4000);
     }
 }

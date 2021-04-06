@@ -4,47 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".china">
+    tools:context=".russia">
 
     <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="323dp"
-        android:layout_height="164dp"
+        android:id="@+id/imageView7"
+        android:layout_width="220dp"
+        android:layout_height="121dp"
         android:layout_marginStart="107dp"
         android:layout_marginLeft="107dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="107dp"
+        android:onClick="animateRussia"
         android:layout_marginRight="107dp"
-        android:onClick="animateChina"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/china" />
+        app:srcCompat="@drawable/russia" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="393dp"
-        android:layout_height="318dp"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
         android:layout_marginTop="20dp"
-        android:text="China, officially the People's Republic of China, is a country in East Asia. It is the world's most populous country, with a population of around 1.4 billion. Covering approximately 9.6 million square kilometers, it is the world's third or fourth-largest country by area."
+        android:text="Russia has a population of 146.2 million; and is the ninth-most populous country, as well as the most populous country in Europe. Moscow, the capital, is the largest city in Europe, while Saint Petersburg is the second-largest city and the country's cultural centre."
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <Button
-        android:id="@+id/chinaBtn"
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="159dp"
         android:layout_marginLeft="159dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="164dp"
-        android:layout_marginRight="164dp"
-        android:onClick="btnNextCHina"
+        android:layout_marginTop="18dp"
+        android:onClick="btnRussiaNext"
+        android:layout_marginEnd="159dp"
+        android:layout_marginRight="159dp"
         android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,12 +9,15 @@
     <TextView
         android:id="@+id/maintx"
         android:layout_width="wrap_content"
-        android:layout_height="18dp"
-        android:layout_marginTop="124dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="148dp"
+        android:background="#44CCB2"
+        android:capitalize="characters"
+        android:fontFamily="sans-serif-condensed-light"
         android:text="@string/knowledge_about_countries"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,11 +26,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
-        android:text="@string/lets_go"
         android:onClick="mianpageactivitiy"
+        android:text="@string/lets_go"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/maintx"
-        app:layout_constraintVertical_bias="0.251" />
+        app:layout_constraintVertical_bias="0.149" />
 </androidx.constraintlayout.widget.ConstraintLayout>

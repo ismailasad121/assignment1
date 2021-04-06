@@ -9,23 +9,23 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="173dp"
-        android:layout_height="188dp"
+        android:layout_height="154dp"
         android:layout_marginStart="107dp"
         android:layout_marginLeft="107dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="107dp"
         android:layout_marginRight="107dp"
+        android:onClick="animation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="animation"
         app:srcCompat="@drawable/pakistan" />
 
     <TextView
         android:id="@+id/paktext"
         android:layout_width="409dp"
         android:layout_height="329dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:text="Pakistan, officially the Islamic Republic of Pakistan, is a country in South Asia. It is the world's fifth-most populous country with a population exceeding 212.2 million, and has the world's second-largest Muslim population"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,11 +39,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="160dp"
         android:layout_marginRight="160dp"
-        android:text="Next"
         android:onClick="pakbtnNext"
+        android:text="Next"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/paktext"
-        app:layout_constraintVertical_bias="0.459" />
+        app:layout_constraintVertical_bias="0.207" />
 </androidx.constraintlayout.widget.ConstraintLayout>

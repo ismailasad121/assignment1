@@ -20,7 +20,7 @@ public class iran extends AppCompatActivity {
 
     public void animateIran(View view) {
         ImageView imageView=findViewById(R.id.imageView2);
-        imageView.animate().rotation(720).setDuration(2000);
+        imageView.animate().rotation(720).setDuration(4000);
     }
 
     public void btnIranNext(View view) {
