@@ -22,6 +22,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent= new Intent(this, india.class);
         startActivity(intent);
     }
+    public void backTOMenu(View view) {
+        Intent intent= new Intent(this, MainActivity2.class);
+        startActivity(intent);
+    }
 
     public void animation(View view) {
         ImageView imageView=findViewById(R.id.imageView);

@@ -4,46 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".india">
-
-    <TextView
-        android:id="@+id/indText"
-        android:layout_width="384dp"
-        android:layout_height="305dp"
-        android:layout_marginTop="20dp"
-        android:text="India, officially the Republic of India, is a country in South Asia. It is the second-most populous country, the seventh-largest country by land area, and the most populous democracy in the world."
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+    tools:context=".malaysia">
 
     <Button
-        android:id="@+id/indBtn"
+        android:id="@+id/malaysiaBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
-        android:onClick="indbtnNext"
-        android:text="next"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:onClick="malaysiaBtnNext"
+        android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/indText" />
+        app:layout_constraintTop_toBottomOf="@+id/malaysiaText" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="212dp"
-        android:layout_height="136dp"
+        android:id="@+id/malaysiaImg"
+        android:layout_width="228dp"
+        android:layout_height="119dp"
         android:layout_marginStart="107dp"
         android:layout_marginLeft="107dp"
         android:layout_marginTop="44dp"
+        android:onClick="animateMalaysia"
         android:layout_marginEnd="107dp"
         android:layout_marginRight="107dp"
-        android:onClick="animateIndia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/india1" />
+        app:srcCompat="@drawable/malaysia" />
+
+    <TextView
+        android:id="@+id/malaysiaText"
+        android:layout_width="398dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="20dp"
+        android:text="Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences."
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/malaysiaImg" />
 
     <Button
         android:id="@+id/backMenuBtn"
@@ -55,6 +56,6 @@
         android:text="Back"
         android:onClick="backTOMenu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/indText" />
+        app:layout_constraintTop_toBottomOf="@+id/malaysiaText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,31 +6,185 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <TextView
-        android:id="@+id/maintx"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
-        android:background="#44CCB2"
-        android:capitalize="characters"
-        android:fontFamily="sans-serif-condensed-light"
-        android:text="@string/knowledge_about_countries"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="36dp"
+        android:background="#A62222"
         android:onClick="mianpageactivitiy"
         android:text="@string/lets_go"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/maintx"
-        app:layout_constraintVertical_bias="0.149" />
+        app:layout_constraintTop_toBottomOf="@+id/mainconText" />
+
+    <ImageView
+        android:id="@+id/mainAgfImg"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="detailAfg"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/mainChinaImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainPakImg"
+        app:srcCompat="@drawable/afghanistan" />
+
+    <ImageView
+        android:id="@+id/mainChinaImg"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="17dp"
+        android:onClick="detailChina"
+        android:layout_marginRight="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/mainameriaImg"
+        app:layout_constraintStart_toEndOf="@+id/mainAgfImg"
+        app:layout_constraintTop_toBottomOf="@+id/mainPakImg"
+        app:srcCompat="@drawable/china" />
+
+    <ImageView
+        android:id="@+id/mainameriaImg"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="detailAmerica"
+        android:layout_marginRight="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mainChinaImg"
+        app:layout_constraintTop_toBottomOf="@+id/mainPakImg"
+        app:srcCompat="@drawable/america" />
+
+    <ImageView
+        android:id="@+id/mianIndiaImg"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="detailIndia"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/mainiranImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainAgfImg"
+        app:srcCompat="@drawable/india1" />
+
+    <ImageView
+        android:id="@+id/mainiranImg"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="detailIran"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/mainmalaysiaImg"
+        app:layout_constraintStart_toEndOf="@+id/mianIndiaImg"
+        app:layout_constraintTop_toBottomOf="@+id/mainChinaImg"
+        app:srcCompat="@drawable/iran1" />
+
+    <ImageView
+        android:id="@+id/mainmalaysiaImg"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="detailMalaysia"
+        android:layout_marginRight="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mainiranImg"
+        app:layout_constraintTop_toBottomOf="@+id/mainameriaImg"
+        app:srcCompat="@drawable/malaysia" />
+
+    <ImageView
+        android:id="@+id/mainturkeyImg"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="detailTurkey"
+        app:layout_constraintEnd_toStartOf="@+id/mainsaudiImg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mianIndiaImg"
+        app:srcCompat="@drawable/turkey" />
+
+    <ImageView
+        android:id="@+id/mainsaudiImg"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="detailSaudi"
+        app:layout_constraintEnd_toStartOf="@+id/mainRussiaImg"
+        app:layout_constraintStart_toEndOf="@+id/mainturkeyImg"
+        app:layout_constraintTop_toBottomOf="@+id/mainiranImg"
+        app:srcCompat="@drawable/saudi" />
+
+    <ImageView
+        android:id="@+id/mainRussiaImg"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="28dp"
+        android:onClick="detailRussia"
+        android:layout_marginRight="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mainsaudiImg"
+        app:layout_constraintTop_toBottomOf="@+id/mainmalaysiaImg"
+        app:srcCompat="@drawable/russia" />
+
+    <ImageView
+        android:id="@+id/mainPakImg"
+        android:layout_width="237dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="16dp"
+        android:onClick="detailPakistan"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pakistan" />
+
+    <TextView
+        android:id="@+id/mainconText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:background="#32AEE6"
+        android:text="@string/knowledge_about_countries"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainsaudiImg" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

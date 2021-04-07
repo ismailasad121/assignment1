@@ -16,7 +16,10 @@ public class china extends AppCompatActivity {
         setContentView(R.layout.activity_china);
         button=findViewById(R.id.chinaBtn);
     }
-
+    public void backTOMenu(View view) {
+        Intent intent= new Intent(this, MainActivity2.class);
+        startActivity(intent);
+    }
     public void animateChina(View view) {
         ImageView imageView=findViewById(R.id.imageView5);
         imageView.animate().rotation(720).setDuration(4000);

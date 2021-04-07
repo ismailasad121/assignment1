@@ -17,7 +17,10 @@ public class russia extends AppCompatActivity {
         button=findViewById(R.id.button4);
     }
 
-
+    public void backTOMenu(View view) {
+        Intent intent= new Intent(this, MainActivity2.class);
+        startActivity(intent);
+    }
     public void animateRussia(View view) {
         ImageView imageView=findViewById(R.id.imageView7);
         imageView.animate().rotation(720).setDuration(4000);
@@ -25,7 +28,7 @@ public class russia extends AppCompatActivity {
     }
 
     public void btnRussiaNext(View view) {
-        Intent intent=new Intent(this,india.class);
+        Intent intent=new Intent(this,saudiArabia.class);
         startActivity(intent);
     }
 }

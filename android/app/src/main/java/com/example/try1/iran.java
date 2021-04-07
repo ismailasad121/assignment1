@@ -17,7 +17,10 @@ public class iran extends AppCompatActivity {
         button=findViewById(R.id.button2);
     }
 
-
+    public void backTOMenu(View view) {
+        Intent intent= new Intent(this, MainActivity2.class);
+        startActivity(intent);
+    }
     public void animateIran(View view) {
         ImageView imageView=findViewById(R.id.imageView2);
         imageView.animate().rotation(720).setDuration(4000);

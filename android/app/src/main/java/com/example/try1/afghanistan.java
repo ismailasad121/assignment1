@@ -17,7 +17,10 @@ public class afghanistan extends AppCompatActivity {
         button=findViewById(R.id.afgBtn);
     }
 
-
+    public void backTOMenu(View view) {
+        Intent intent= new Intent(this, MainActivity2.class);
+        startActivity(intent);
+    }
     public void animateafghanistan(View view) {
         ImageView imageView=findViewById(R.id.imageView3);
         imageView.animate().rotation(720).setDuration(4000);

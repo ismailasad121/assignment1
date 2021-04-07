@@ -22,4 +22,56 @@ public class MainActivity2 extends AppCompatActivity {
         Intent intent= new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
+    public void detailAfg(View view) {
+        Intent intent= new Intent(this, afghanistan.class);
+        startActivity(intent);
+    }
+
+
+    public void detailChina(View view) {
+        Intent intent= new Intent(this, china.class);
+        startActivity(intent);
+    }
+
+
+    public void detailAmerica(View view) {
+        Intent intent= new Intent(this, america.class);
+        startActivity(intent);
+    }
+
+    public void detailIndia(View view) {
+        Intent intent= new Intent(this, india.class);
+        startActivity(intent);
+    }
+
+    public void detailIran(View view) {
+        Intent intent= new Intent(this, iran.class);
+        startActivity(intent);
+    }
+
+    public void detailMalaysia(View view) {
+        Intent intent= new Intent(this, malaysia.class);
+        startActivity(intent);
+    }
+
+    public void detailTurkey(View view) {
+        Intent intent= new Intent(this, turkey.class);
+        startActivity(intent);
+    }
+
+    public void detailSaudi(View view) {
+        Intent intent= new Intent(this, saudiArabia.class);
+        startActivity(intent);
+    }
+
+    public void detailRussia(View view) {
+        Intent intent= new Intent(this, russia.class);
+        startActivity(intent);
+    }
+
+    public void detailPakistan(View view) {
+        Intent intent= new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }

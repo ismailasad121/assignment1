@@ -8,30 +8,27 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class india extends AppCompatActivity {
-    Button button ;
+public class malaysia extends AppCompatActivity {
+    Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_india);
-        button=findViewById(R.id.indBtn);
-
+        setContentView(R.layout.activity_malaysia);
+        button=findViewById(R.id.malaysiaBtn);
     }
-
-
-    public void indbtnNext(View view) {
-        Intent intent= new Intent(this, afghanistan.class);
+    public void backTOMenu(View view) {
+        Intent intent= new Intent(this, MainActivity2.class);
         startActivity(intent);
     }
 
-
-    public void animateIndia(View view) {
-        ImageView imageView=findViewById(R.id.imageView4);
+    public void animateMalaysia(View view) {
+        ImageView imageView=findViewById(R.id.malaysiaImg);
         imageView.animate().rotation(720).setDuration(4000);
     }
 
-    public void backTOMenu(View view) {
-        Intent intent= new Intent(this, MainActivity2.class);
+    public void malaysiaBtnNext(View view) {
+        Intent intent= new Intent(this,MainActivity2.class);
         startActivity(intent);
     }
 }

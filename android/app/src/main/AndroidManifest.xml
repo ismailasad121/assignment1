@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Try1">
-        <activity android:name=".russia"></activity>
+        <activity android:name=".malaysia"></activity>
+        <activity android:name=".turkey" />
+        <activity android:name=".saudiArabia" />
+        <activity android:name=".russia" />
         <activity android:name=".america" />
         <activity android:name=".china" />
         <activity android:name=".iran" />

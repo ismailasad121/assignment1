@@ -4,34 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".iran">
+    tools:context=".turkey">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="275dp"
-        android:layout_height="130dp"
+        android:id="@+id/turkeyImg"
+        android:layout_width="260dp"
+        android:layout_height="134dp"
         android:layout_marginStart="107dp"
         android:layout_marginLeft="107dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="107dp"
+        android:onClick="animateTurkey"
         android:layout_marginRight="107dp"
-        android:onClick="animateIran"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/iran1" />
+        app:srcCompat="@drawable/turkey" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="403dp"
-        android:layout_height="266dp"
-        android:layout_marginTop="16dp"
-        android:text="Iran, also called Persia and officially the Islamic Republic of Iran, is a country in Western Asia. It is bordered to the northwest by Armenia and Azerbaijan, to the north by the Caspian Sea."
+        android:id="@+id/turkeyText"
+        android:layout_width="395dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        android:text="Turkey, officially the Republic of Turkey, is a transcontinental country straddling Southeastern Europe and Western Asia."
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/turkeyImg" />
     <Button
         android:id="@+id/backMenuBtn"
         android:layout_width="wrap_content"
@@ -42,17 +44,17 @@
         android:text="Back"
         android:onClick="backTOMenu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/turkeyText" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/turkeyBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        android:onClick="btnIranNext"
+        android:layout_marginEnd="112dp"
+        android:layout_marginRight="112dp"
+        android:onClick="turkeyBtnNext"
         android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/turkeyText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
