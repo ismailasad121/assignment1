@@ -15,23 +15,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button=findViewById(R.id.pakbtn);
+        button=findViewById(R.id.MainActBtn);
     }
 
-    public void pakbtnNext(View view) {
-        Intent intent= new Intent(this, india.class);
-        startActivity(intent);
-    }
-    public void backTOMenu(View view) {
-        Intent intent= new Intent(this, MainActivity2.class);
-        startActivity(intent);
-    }
 
     public void animation(View view) {
-        ImageView imageView=findViewById(R.id.imageView);
-        //imageView.animate().alpha(0).setDuration(2000);
-        //imageView.animate().translationYBy(200).setDuration(2000);
-        //imageView.animate().translationXBy(200).setDuration(2000);
-        imageView.animate().rotation(720).setDuration(4000);
+        ImageView imageView=findViewById(R.id.bismillahImg);
+        imageView.animate().alpha(0).setDuration(3000);
+
+    }
+
+    public void towardMainMenu(View view) {
+        Intent intent= new Intent(this, MainActivity2.class);
+        startActivity(intent);
     }
 }

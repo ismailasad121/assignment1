@@ -46,7 +46,7 @@
         app:srcCompat="@drawable/india1" />
 
     <Button
-        android:id="@+id/backMenuBtn"
+        android:id="@+id/MainActBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="51dp"

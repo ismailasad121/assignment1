@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B85656"
     tools:context=".malaysia">
 
     <Button
@@ -15,6 +16,7 @@
         android:layout_marginRight="108dp"
         android:onClick="malaysiaBtnNext"
         android:text="Next"
+        app:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/malaysiaText" />
 
@@ -25,9 +27,9 @@
         android:layout_marginStart="107dp"
         android:layout_marginLeft="107dp"
         android:layout_marginTop="44dp"
-        android:onClick="animateMalaysia"
         android:layout_marginEnd="107dp"
         android:layout_marginRight="107dp"
+        android:onClick="animateMalaysia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -47,14 +49,15 @@
         app:layout_constraintTop_toBottomOf="@+id/malaysiaImg" />
 
     <Button
-        android:id="@+id/backMenuBtn"
+        android:id="@+id/MainActBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="51dp"
         android:layout_marginLeft="51dp"
         android:layout_marginTop="60dp"
-        android:text="Back"
         android:onClick="backTOMenu"
+        android:text="Back"
+        app:backgroundTint="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/malaysiaText" />
 

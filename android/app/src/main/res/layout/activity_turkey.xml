@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B85656"
     tools:context=".turkey">
 
     <ImageView
@@ -14,8 +15,8 @@
         android:layout_marginLeft="107dp"
         android:layout_marginTop="44dp"
         android:layout_marginEnd="107dp"
-        android:onClick="animateTurkey"
         android:layout_marginRight="107dp"
+        android:onClick="animateTurkey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -34,15 +35,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/turkeyImg" />
+
     <Button
-        android:id="@+id/backMenuBtn"
+        android:id="@+id/MainActBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="51dp"
         android:layout_marginLeft="51dp"
         android:layout_marginTop="60dp"
-        android:text="Back"
         android:onClick="backTOMenu"
+        android:text="Back"
+        app:backgroundTint="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/turkeyText" />
 
@@ -55,6 +58,7 @@
         android:layout_marginRight="112dp"
         android:onClick="turkeyBtnNext"
         android:text="Next"
+        app:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/turkeyText" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Try1">
-        <activity android:name=".malaysia"></activity>
+        <activity android:name=".videoRussia"></activity>
+        <activity android:name=".videoTurkey" />
+        <activity android:name=".videoIndia" />
+        <activity android:name=".videoIran" />
+        <activity android:name=".videoMalaysia" />
+        <activity android:name=".videoAmerica" />
+        <activity android:name=".videoSaudiArabia" />
+        <activity android:name=".videoChina" />
+        <activity android:name=".videoAfghanistan" />
+        <activity android:name=".videoPakistan" />
+        <activity android:name=".pakistan" />
+        <activity android:name=".malaysia" />
         <activity android:name=".turkey" />
         <activity android:name=".saudiArabia" />
         <activity android:name=".russia" />
@@ -18,14 +29,14 @@
         <activity android:name=".iran" />
         <activity android:name=".afghanistan" />
         <activity android:name=".india" />
-        <activity android:name=".MainActivity2">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity2">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
