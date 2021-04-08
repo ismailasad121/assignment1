@@ -14,7 +14,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="36dp"
         android:background="#A62222"
-        android:onClick="mianpageactivitiy"
+        android:onClick="letsFirst"
         android:text="@string/lets_go"
         app:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"

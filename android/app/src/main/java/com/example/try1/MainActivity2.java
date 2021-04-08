@@ -19,7 +19,7 @@ public class MainActivity2 extends AppCompatActivity {
 
 
     public void mianpageactivitiy(View view) {
-        Intent intent= new Intent(this, MainActivity.class);
+        Intent intent= new Intent(this, pakistan.class);
         startActivity(intent);
     }
 
@@ -71,7 +71,12 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void detailPakistan(View view) {
-        Intent intent= new Intent(this, MainActivity.class);
+        Intent intent= new Intent(this, pakistan.class);
+        startActivity(intent);
+    }
+
+    public void letsFirst(View view) {
+        Intent intent= new Intent(this, pakistan.class);
         startActivity(intent);
     }
 }
